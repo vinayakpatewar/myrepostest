@@ -1,5 +1,4 @@
-pipeline {
-agent { JenkinsDocker true }
+pipeline { agent { dockerfile { filename 'JenkinsDocker' } }
 stages {
 stage('Test') {
 steps {
@@ -9,3 +8,4 @@ sh 'svn --version'
 }
 }
 }
+
