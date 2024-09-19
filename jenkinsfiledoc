@@ -1,4 +1,7 @@
-pipeline { agent { dockerfile { filename 'JenkinsDocker' } }
+pipeline { agent {
+dockerfile { filename'JenkinsDocker' 
+}
+}
 stages {
 stage('Test') {
 steps {
